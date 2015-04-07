@@ -2,17 +2,83 @@
 <html>
 <head>
   <title>DSGN425: Programming Design Spring 2015</title>
+
+  <link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+  <style>
+/* The general pattern for CSS:
+.some_selector{
+    some_property:some_value*/
+
+/*bootstrap cdn: host for font awesome*/
+
+h1 {
+  color: purple;
+  font-size: 30px;
+}
+
+h2 {
+  background: purple;
+  color:white;
+  padding-left: 10px;
+  margin-left: 10px;
+  /*px is number of pixels; another measure is %*/
+  text-transform: uppercase;
+}
+
+ul {
+  list-style: none;
+  padding-left: 10px;
+}
+
+.card {
+  border:1px rgba(100,0,100,1) solid;
+  border-radius:20px;
+  margin-bottom:10px;
+  /*padding-bottom: would create white space inside the border*/
+  box-shadow:/*2px*/ 2px 5px 0 gray;
+}
+
+.avatar-name {
+  border-radius: 50%;
+}
+
+body{
+  font-family: 'Slabo 27px', serif;
+}
+
+</style>
+
 </head>
+
 <body>
+<img src="kellogg_logo.png">
   <h1>DSGN425: Programming Design Spring 2015</h1>
 
+<!-- div is a generic element that groups content together -->
+
+<div class="card">
   <h2>Instructors</h2>
 
   <ul>
-    <li>Raghu Betina</li>
-    <li>Arjun Venkataswamy</li>
+    <li>
+      <img class="avatar-name"src="https://graph.facebook.com/rbetina/picture">
+      <!-- try not to hot link images -->
+       <div>
+         <i class="fa fa-dashcube"></i>
+         Raghu Betina
+       </div>
+    </li>
+    <li>
+    <img class="avatar-name" src="https://graph.facebook.com/arjun.venkataswamy/picture">
+    <div>Arjun Venkataswamy</div>
+    </li>
   </ul>
+</div>
 
+<div class="card">
   <h2>Students</h2>
 
   <ul>
@@ -37,7 +103,9 @@
     <li>Francesco Reichert</li>
     <li>Dixie Bradtke</li>
   </ul>
+</div>
 
+<div class="card">
   <h2>Resources</h2>
 
   <ul>
@@ -45,6 +113,7 @@
     <li><a href="http://ask.firstdraft.com/c/dsgn425-spring-2015" target="_blank">Course forum</a></li>
     <li><a href="http://dsgn425-s15.github.io/syllabus/" target="_blank">Course syllabus</a></li>
   </ul>
+</div>
 
 </body>
 </html>
